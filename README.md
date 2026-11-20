@@ -41,7 +41,7 @@ sudo apt install build-essential
 Compile the code into an executable called `app`, then run it. Run both from the project root:
 
 ```bash
-g++ -std=c++17 -Isrc/core -Isrc/filters -Isrc/users -Isrc/io -Isrc/ui -Ithird_party src/*.cpp src/*/*.cpp -o app
+g++ -std=c++17 -Isrc/core -Isrc/filters -Isrc/users -Isrc/io -Isrc/ui -IThird_party_libraries src/*.cpp src/*/*.cpp -o app
 ./app
 ```
 
@@ -69,7 +69,7 @@ Saved examples/output/blue_jay/blue_jay_green_only.png
 ├── README.md
 ├── .gitignore
 ├── Makefile
-├── third_party/        stb_image.h, stb_image_write.h
+├── Third_party_libraries/   stb_image.h, stb_image_write.h
 ├── data/               text files read by the program
 ├── examples/
 │   ├── input/          images to test with
@@ -102,7 +102,7 @@ sudo apt install build-essential
 With `g++` directly (run from the project root), this creates the executable `app`:
 
 ```bash
-g++ -std=c++17 -Isrc/core -Isrc/filters -Isrc/users -Isrc/io -Isrc/ui -Ithird_party src/*.cpp src/*/*.cpp -o app
+g++ -std=c++17 -Isrc/core -Isrc/filters -Isrc/users -Isrc/io -Isrc/ui -IThird_party_libraries src/*.cpp src/*/*.cpp -o app
 ```
 
 Then run the executable:
